@@ -52,11 +52,11 @@ int rsa_decrypt_block(uchar *src, ulong srclen, uchar *dst, ulong dstlen, privat
 //  key - закрытый ключ для подписания
 int rsa_sign_block(uchar *src, ulong srclen, uchar *dst, ulong dstlen, private_key key);
 
-// Функция проверки подписи блока
+// Функция получения прообраза сообщения из подписи
 // Параметры:
 //  src - входной буфер
 //  srclen - длина входного буфера
 //  dst - выходной буфер
 //  dstlen - длина выходного буфера
-//  key - открытый ключ для проверки подписи
+//  key - открытый ключ для получения прообраза
 int rsa_check_block(uchar *src, ulong srclen, uchar *dst, ulong dstlen, public_key key);
