@@ -20,7 +20,7 @@ struct private_key
 };
 
 // Функция для получения рандома для генерации простых чисел
-static int myrand(void *rng_state, unsigned char *output, size_t len);
+int myrand(void *rng_state, unsigned char *output, size_t len);
 
 // Функция генерации ключей с заданной разрядностью и показателем e
 int rsa_generate_keys(t_sint exp, public_key &pub, private_key &priv, size_t keylen);

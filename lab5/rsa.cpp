@@ -1,6 +1,6 @@
 #include "rsa.h"
 
-static int myrand(void *rng_state, unsigned char *output, size_t len)
+int myrand(void *rng_state, unsigned char *output, size_t len)
 {
 	size_t i;
 
